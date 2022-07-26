@@ -5,8 +5,18 @@
 # This dockerfile is intended for educational purposes and is licensed under the MIT License         #
 ######################################################################################################
 
-# FROM defines the base image to start with.
+# FROM defines the base image to start with. 
 FROM python:3.10-slim-bullseye
+
+# LABEL is used to add metadata to the container. These are added as key/vaule pairs.
+# The values in the LABELS can be displayed in the 'docker inspect' output. To make the labels easier
+# to find use --format='{{json .Config.Labels}}' at the end of the 'docker inspect' command.
+# e.g. docker image inspect --format='{{json .Config.Labels}}' image_name
+LABEL author="Barry Weiss - barweiss@cisco.com"
+LABEL version="1.0"
+LABEL description="The Tao of Ron Swanson - A simple Python Flask Demo that does something\
+                   better than 'Hello World'. The application uses a 'Ron Swanson Quotes'\
+                   API to display random Ron Swanson quotes."
 
 # COPY all files in the current directory ('.') to a directory named /app in the container.
 COPY . /app
