@@ -1,3 +1,5 @@
+# Ignore these items
 __pycache__
 .env
 .python-version
+.vscode/
