@@ -1,3 +1,15 @@
+#! /usr/bin/env python
+
+"""
+Simple Flask Application for Demonstration and Learning Purposes
+Author: Barry Weiss <barweiss@cisco.com>
+"""
+
+__author__ = "Barry Weiss"
+__author_email__ = "barweiss@cisco.com"
+__copyright__ = "Copyright (c) 2022 Cisco System, Inc."
+__license__ = "MIT"
+
 from flask import Flask, render_template
 from swanson_quote_api import swanson_quote
 

@@ -1,3 +1,15 @@
+#! /usr/bin/env python
+
+"""
+Simple API Requests Application for Demonstration and Learning Purposes
+Author: Barry Weiss <barweiss@cisco.com>
+"""
+
+__author__ = "Barry Weiss"
+__author_email__ = "barweiss@cisco.com"
+__copyright__ = "Copyright (c) 2022 Cisco System, Inc."
+__license__ = "MIT"
+
 from requests import get
 import json
 
